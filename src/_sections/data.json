@@ -1,0 +1,91 @@
+{
+    "title":"My name is Shayan",
+    "subtitle":"Full Stack Web | Php & MySql | React  Python | C++ | GO",
+    "about":"I'm a Software Engineer",
+    "education1":"MSc IT Management @",
+    "uni1":"University Of Sussex",
+    "education2":"BSc Mechanical Engineering @",
+    "uni2":"IAU",
+    "links":{
+        "Git":"https://github.com/shayan74",
+        "LinkedIn":"https://www.linkedin.com/in/shayan-ebrahimi/",
+        "Instagram":"https://www.instagram.com/byshayan/",
+        "Email":"mailto:shayan_ebrahimi@live.com"
+    },
+    "sections":[
+        {
+        "title":"",
+        "items":[
+            {
+                "SectionType":"Box",
+                "Content":{
+                    "title":"Php",
+                    "logo":"devicon-php-plain",
+                    "lenght":"Expert"
+                }
+
+            },                
+            {
+                "SectionType":"Box",
+                "Content":{
+                    "title":"MySql",
+                    "logo":"devicon-mysql-plain-wordmark",
+                    "lenght":"Expert"
+                }
+
+            },                  {
+                "SectionType":"Box",
+                "Content":{
+                    "title":"GO",
+                    "logo":"devicon-go-plain",
+                    "lenght":"Skilled"
+                }
+
+            },               {
+                "SectionType":"Box",
+                "Content":{
+                    "title":"Python",
+                    "logo":"devicon-python-plain colored",
+                    "lenght":"Experienced"
+                }
+
+            },                {
+                "SectionType":"Box",
+                "Content":{
+                    "title":"C++",
+                    "logo":"devicon-cplusplus-plain-wordmark",
+                    "lenght":"Skilled"
+                }
+
+            },               {
+                "SectionType":"Box",
+                "Content":{
+                    "title":"React",
+                    "logo":"devicon-react-original-wordmark",
+                    "lenght":"Experienced"
+                }
+
+            },                {
+                "SectionType":"Box",
+                "Content":{
+                    "title":"JavaScript",
+                    "logo":"devicon-javascript-plain",
+                    "lenght":"Experienced"
+                }
+
+            }
+            ,                {
+                "SectionType":"Box",
+                "Content":{
+                    "title":"CSS",
+                    "logo":"devicon-css3-plain-wordmark",
+                    "lenght":"Expert"
+                }
+
+            }
+            
+            ]
+        }
+        
+    ]
+}

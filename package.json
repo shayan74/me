@@ -1,0 +1,51 @@
+{
+  "name": "shayan74",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://shayan74.github.io/me",
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "lottie-react": "^2.4.0",
+    "react": "^18.2.0",
+    "react-animated-cursor": "^2.11.2",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.2.1",
+    "react-responsive-carousel": "^3.2.23",
+    "react-scripts": "^3.0.1",
+    "react-scroll": "^1.9.0",
+    "react-type-animation": "^3.2.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "predeploy": "SET NODE_OPTIONS=--openssl-legacy-provider && npm run build",
+    "deploy": "SET NODE_OPTIONS=--openssl-legacy-provider && gh-pages -d build",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "test": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts test",
+    "eject": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

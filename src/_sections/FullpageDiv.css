@@ -1,0 +1,82 @@
+.Content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.Content2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Content3 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Content4 {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .Content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  .Content2 {
+    height: auto;
+    width: 100%;
+  }
+  .Content3 {
+    height: auto;
+    width: 100%;
+  }
+  .Content4 {
+    height: 20vh;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .Content {
+    display: none;
+  }
+  .Content2 {
+    display: none;
+  }
+  .Content3 {
+    display: none;
+  }
+  .Content4 {
+    display: none;
+  }
+}/*# sourceMappingURL=FullpageDiv.css.map */

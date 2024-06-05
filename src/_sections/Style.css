@@ -1,0 +1,348 @@
+@font-face {
+  font-family: "Bradley";
+  src: url(../_fonts/BRADHITC.TTF) format("truetype");
+}
+body {
+  font-family: "Bradley";
+  background-color: #e4e3e3;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.TopCircle {
+  height: 70vw;
+  width: 70vw;
+  border-radius: 50%;
+  background-image: radial-gradient(#ff1de2 10%, #e4e3e3 50%);
+  opacity: 0.2;
+  position: fixed;
+  top: -35vw;
+  left: -5em;
+  z-index: 1;
+}
+
+.BottomCircle {
+  height: 50vw;
+  width: 50vw;
+  border-radius: 50%;
+  background-image: radial-gradient(#a394ff 0%, #e4e3e3 60%);
+  opacity: 0.4;
+  position: fixed;
+  bottom: -10vw;
+  right: -10vw;
+  z-index: 2;
+}
+
+.LeftBubble {
+  min-height: 12vw;
+  min-width: 12vw;
+  max-width: 25vw;
+  max-height: 25vw;
+  will-change: width, height, left, top;
+  border-radius: 50%;
+  background-color: #e4e3e3;
+  box-shadow: 1vw 2vw 4vw rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: -8vw;
+  z-index: 3;
+}
+
+.Contact {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  margin-top: 1.5em;
+  grid-template-columns: repeat(1, 100%);
+  display: none;
+}
+
+.RightBubble {
+  height: 12vw;
+  width: 12vw;
+  border-radius: 50%;
+  background-color: #e4e3e3;
+  box-shadow: 1vw 2vw 4vw rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 14vw;
+  right: -7vw;
+  z-index: 4;
+}
+
+.BigBubble {
+  height: 20vw;
+  width: 20vw;
+  border-radius: 100%;
+  background: url("../_img/avatar.png");
+  background-size: cover !important;
+  box-shadow: 1vw 2vw 4vw rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-top: 17vw;
+  right: 17vw;
+  z-index: 4;
+  text-align: center !important;
+}
+
+.ContactIcons {
+  width: auto;
+  height: auto;
+  margin: auto;
+  font-size: 2.2em;
+  font-weight: lighter;
+}
+
+.MainText {
+  width: 30vw;
+  height: 20vw;
+  position: absolute;
+  bottom: 0vw;
+  left: 12vw;
+  z-index: 5;
+  font-size: 1.7vw;
+  font-weight: 600;
+}
+
+.Header {
+  margin-top: 0px;
+  height: 10vh;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.LeftHeader {
+  width: 20vw;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1.5em;
+  font-size: 1.7vw;
+  font-weight: 600;
+  z-index: 9999;
+}
+
+.RightHeader {
+  width: 40vw;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 3vw;
+  font-size: 1.7vw;
+  font-weight: 600;
+  z-index: 9999;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+ul li {
+  margin-left: 6vw;
+  display: block;
+  cursor: pointer;
+}
+
+.LeftBubble2 {
+  height: 30vw;
+  width: 30vw;
+  border-radius: 50%;
+  background-color: #e4e3e3;
+  box-shadow: 1vw 2vw 4vw rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 55vw;
+  left: -14vw;
+  z-index: 9;
+}
+
+.MainText2 {
+  z-index: 50;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.7vw;
+  font-weight: 600;
+}
+
+.uni {
+  font-weight: normal;
+}
+
+.Paragraph {
+  margin-left: 0;
+  margin-right: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 2.5vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: left;
+}
+
+.ParagraphEdu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  line-height: 2.5vw;
+  font-size: 1.5vw;
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
+}
+
+.Copy {
+  width: 30vw;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  z-index: 50;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 767px) {
+  .TopCircle {
+    height: 70vw;
+  }
+  .BottomCircle {
+    height: 50vw;
+  }
+  .LeftBubble {
+    min-height: 30vh;
+    min-width: 25vw;
+    max-width: 30vw;
+    max-height: 30vh;
+    will-change: width, height, left, top;
+    border-radius: 30% !important;
+    background-color: #e4e3e3;
+    box-shadow: 1vw 2vw 4vw rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: -5vw !important;
+    z-index: 3;
+  }
+  .Contact {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 1.5em;
+    grid-template-columns: repeat(1, 100%);
+    display: grid !important;
+  }
+  .RightBubble {
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+    background-color: #e4e3e3;
+    box-shadow: 1vw 2vw 4vw rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 40vh;
+    right: 5vw;
+    z-index: 4;
+  }
+  .BigBubble {
+    height: 50vw;
+    width: 50vw;
+    border-radius: 100%;
+    background: url("../_img/avatar.png");
+    background-size: cover !important;
+    box-shadow: 1vw 2vw 4vw rgba(0, 0, 0, 0.3);
+    position: absolute;
+    margin-top: 40vh;
+    right: 12vw;
+    z-index: 4;
+    text-align: center !important;
+  }
+  .ContactIcons {
+    width: auto;
+    height: auto;
+    margin: auto;
+    font-size: 2em;
+    font-weight: lighter;
+  }
+  .MainText {
+    width: 80vw;
+    height: auto;
+    position: absolute;
+    top: 18vh;
+    left: 10vw;
+    z-index: 5;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  .Header {
+    margin-top: 0px;
+    height: 8vh;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    background-color: rgba(158, 158, 158, 0.623);
+  }
+  .LeftHeader {
+    width: 35vw;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1em;
+    font-size: 0.8em;
+    z-index: 9999;
+  }
+  .RightHeader {
+    width: 40vw;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5vw;
+    font-size: 0.8em;
+    z-index: 9999;
+  }
+  .LeftBubble2 {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: #e4e3e3;
+    box-shadow: 1vw 2vw 4vw rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 55vw;
+    left: -14vw;
+    z-index: 9;
+  }
+  .MainText2 {
+    width: 85vw;
+  }
+  .uni {
+    font-weight: normal;
+  }
+  .Paragraph {
+    margin-left: 0;
+    margin-right: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 3em;
+  }
+  .ParagraphEdu {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    line-height: 2em;
+    font-size: 2em;
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+  }
+  .Copy {
+    width: 80vw;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    z-index: 50;
+    font-size: 1.2em;
+  }
+}/*# sourceMappingURL=Style.css.map */
