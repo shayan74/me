@@ -23,28 +23,59 @@ class FirstSection extends Component {
       function changeWidth() {
  
         var scroll = (window.pageYOffset) + ((window.pageYOffset) * 0.07);
-        var width = Math.min(scroll / 11.5);
+        var width = Math.min(scroll / 12.5);
         var newWindowHeight = window.innerHeight;
+        var WindowWidth = window.innerWidth;
 
         document.getElementById('LeftBubble').style.width = width + 'vw';
         document.getElementById('LeftBubble').style.height = width + 'vw';
     
-        if (width >= 7) {
-          if(newWindowHeight <= 1000)
+        
+          if(newWindowHeight <= 900)
           {
-            document.getElementById('LeftBubble').style.marginTop = (width * 1.5) + 'vw';
+            console.log("899");
+            console.log(newWindowHeight);
+            document.getElementById('LeftBubble').style.marginTop = (width * 1.6) + 'vw';
             //document.getElementById('hder').style.backgroundColor="#0000004d";
 
-          }else if(newWindowHeight <= 1500){
-            document.getElementById('LeftBubble').style.marginTop = (width * 1.05) + 'vw';
+          }else if(newWindowHeight >= 900 & WindowWidth <= 1600){
+            console.log("901");
+            console.log(newWindowHeight);
+            console.log(WindowWidth);
+            document.getElementById('LeftBubble').style.marginTop = (width * 1.5) + 'vw';
+            
+          }else if(newWindowHeight >= 900 & WindowWidth <= 2100){
+            console.log("901");
+            console.log(newWindowHeight);
+            console.log(WindowWidth);
+            document.getElementById('LeftBubble').style.marginTop = (width * 1.1) + 'vw';
+
+          }else if(newWindowHeight >= 900 & WindowWidth >= 2000 ){
+            console.log("Else IF 2");
+            console.log(newWindowHeight);
+            console.log(WindowWidth);
+
+            document.getElementById('LeftBubble').style.marginTop = (width * 0.85) + 'vw';
           }
-          else{
-            document.getElementById('LeftBubble').style.marginTop = (width * 0.45) + 'vw';
-          }
-            document.getElementById('LeftBubble').style.left = '-8vw'; // Maintain the original left position
-        } else {
-            document.getElementById('LeftBubble').style.marginTop = '7vw';
-        }
+          // else{
+          //   console.log("Else1");
+          //   console.log(newWindowHeight);
+          //   //document.getElementById('LeftBubble').style.marginTop = (width * 1.45) + 'vw';
+          // }
+         
+
+
+
+
+
+          // if (width >= 7) {
+          //    //document.getElementById('LeftBubble').style.left = '-8vw'; // Maintain the original left position
+          // } else {
+          // console.log("Else2");
+          // console.log(newWindowHeight);
+          // document.getElementById('LeftBubble').style.marginTop = '7vw';
+          // }
+
     }
     
     changeWidth();
