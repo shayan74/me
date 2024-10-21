@@ -49,7 +49,7 @@ class SecondSection extends Component {
             {data.education2} <label className="uni">{data.uni2}</label>
             <br />
             <br />
-            <GrLocationPin color="red"/> Location: Brighton, UK
+            <GrLocationPin color="red"/> {data.location}
 
           </p>
         </div>
